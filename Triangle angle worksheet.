@@ -1,0 +1,32 @@
+#include <iostream>
+# include <random>
+#include <stdlib.h>
+#include <time.h>
+# include <cstdlib>
+
+using namespace std;
+int a[100];
+int num;
+int num1;
+int main()
+{
+
+        srand((unsigned int)time(NULL));
+        for(int i = 0; i < 25; i++){
+        num = rand() % 89 + 1;
+        num1 = rand() % 89 + 1;
+        cout << "삼각형에서 각 ABC의 크기는 " << num;
+        cout << "도 각 ACB의 크기는 " << num1;
+        cout << " 도 BAC의 크기는 몇도일까?";
+        cout << "\n";
+        a[i] = 180 - num - num1;
+    }
+    cout << "\n";
+    for(int i = 0; i < 25; i++){
+        cout << a[i] << " ";
+    }
+
+
+
+
+}
